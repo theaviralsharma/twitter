@@ -1,0 +1,11 @@
+body {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: aqua;
+}
+
+h1 {
+    color: black;
+    background-color:bisque;
+}
