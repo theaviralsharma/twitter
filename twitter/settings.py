@@ -139,3 +139,7 @@ ALLOWED_HOSTS = [
     "127.0.0.1",  # Local development
     "localhost",
 ]
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://twitter-fcdv.onrender.com',
+]
