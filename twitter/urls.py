@@ -20,11 +20,8 @@ from django.conf import settings
 from django.conf.urls.static import static
 from . import views
 from django.contrib.auth.urls import views as auth_views
-from .views import run_migrations, create_superuser
 
 urlpatterns = [
-    path('run-migrations/', run_migrations, name='run_migrations'),
-    path('create-superuser/', create_superuser, name='create_superuser'),
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
     path('tweet/', include('tweet.urls')),
