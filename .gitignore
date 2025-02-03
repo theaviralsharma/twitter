@@ -21,6 +21,10 @@ logs/
 *.log
 local_settings.py
 
-# Static files (if applicable)
-/static/
-/media/
+# # Static files (if applicable)
+# /static/
+# /media/
+
+hello_world.png
+css
+js
