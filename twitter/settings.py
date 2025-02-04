@@ -12,8 +12,6 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 import os
 from pathlib import Path
 
-PORT = os.getenv("PORT", "8000")
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -133,13 +131,3 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGIN_URL = '/accounts/login'
 LOGIN_REDIRECT_URL = '/tweet/'
 LOGOUT_REDIRECT_URL = '/tweet/'
-
-ALLOWED_HOSTS = [
-    "twitter-fcdv.onrender.com",  # Your Render domain
-    "127.0.0.1",  # Local development
-    "localhost",
-]
-
-CSRF_TRUSTED_ORIGINS = [
-    'https://twitter-fcdv.onrender.com',
-]
